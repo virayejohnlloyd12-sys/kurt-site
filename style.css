@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(image/ralphlaurenb1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.navbar {
+  background: #b22222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: relative;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+  background: #333;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #111;
+  min-width: 160px;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* HERO */
+.hero {
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  color: white;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 450px;
+}
+
+.hero h3 {
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.hero h4 {
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* PROJECT DISCLAIMER */
+.project-note {
+  margin-top: 15px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 8px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: inline-block;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background: transparent;
+  padding: 10px;
+  text-align: right;
+  z-index: 1000;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 7x;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
